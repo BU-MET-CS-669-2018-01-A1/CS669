@@ -1,0 +1,66 @@
+Aspect 1: New Product Use Cases
+
+Entities: Sellers, New Products, Product Category
+
+Business Rules:
+A seller could sell zero or more new products.
+A new product must be sold by one or more sellers. 
+
+A new product must be categorized into one or more product categories. 
+A product category may contain zero or many new products.
+
+Aspect 2: Product Delivery Use Cases
+
+Entities: Sellers, Products, Amazon’s warehouse
+
+Business Rules:
+
+A seller can deliver one or many products.
+A product must be delivered by only one seller. 
+
+A seller can get access to one or many Amazon’s warehouse.
+An Amazon’s warehouse is available to many sellers.
+
+An Amazon’s warehouse could store zero to many products.
+A product can be shipped to one or many Amazon’s warehouse.
+
+Aspect 3: New Customer Account Use Case
+
+Entities: Customer, Account, Products
+
+Business Rules:
+
+A customer can only create one Amazon account.
+An Amazon account is owned by only one customer.
+
+An account can purchase zero or many products.
+A product can be ordered by zero or many accounts.
+
+Aspect 4: Product Purchase Use Case
+
+Entities: Customer, Seller, Shipping Speed, Orders
+
+Business Rules:
+
+A customer can only select one seller’s inventory selecting a specific product. 
+A seller’s inventory can be chosen by zero or many customers. 
+
+An order can only have one out of four shipping speed.
+The shipping speed can be chosen by zero or many orders.
+
+A customer can have zero or more orders.
+An order must belong to only one customer.
+
+A seller can receive zero or more orders.
+An order must only belong to a seller.
+
+Aspect 5: Product Shipment Use Case
+
+Entities: Order, Identifier, Package
+
+Business Rules:
+An order can have one or more packages. 
+A package must belong to one order.
+
+A package must be assigned only one identifier. 
+An identifier can be checked by only one package. 
